@@ -1,0 +1,9 @@
+dummy-api:
+  base-url: https://dummy.restapiexample.com/api/
+  api-version: 1
+  username: ${USERNAME:foo}
+  password: ${PASSWORD:bar}
+
+logging:
+  pattern:
+    console: "%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss. SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(---){faint} %clr(%-40.40logger{39}){cyan} %clr(correlationId=){faint}%clr(%X{X-Correlation-ID:- }){reverse} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
